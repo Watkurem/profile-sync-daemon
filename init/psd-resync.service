@@ -6,6 +6,7 @@ BindsTo=psd.service
 
 [Service]
 Type=oneshot
+RemainAfterExit=yes
 ExecStart=/usr/bin/profile-sync-daemon resync
 Environment=LAUNCHED_BY_SYSTEMD=1
 
